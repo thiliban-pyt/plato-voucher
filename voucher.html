@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plato voucher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+      integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css"
+      integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/solid.min.css"
+      integrity="sha512-EvFBzDO3WBynQTyPJI+wLCiV0DFXzOazn6aoy/bGjuIhGCZFh8ObhV/nVgDgL0HZYC34D89REh6DOfeJEWMwgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media print {
+        body {
+          break-inside: avoid;
+        }
+      }
+
+      body {
+        width: 100%;
+        font-family: "Manrope";
+      }
+
+      p {
+        color: #555555;
+        margin: 0;
+      }
+
+      ul {
+        padding: 0 12px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      li > p {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+
+      .header {
+        background: #09b367;
+        padding: 16px 28px;
+        display: table;
+        width: 670px;
+      }
+
+      .header img {
+        height: 30px;
+        width: 100px;
+        display: table-cell;
+        text-align: left;
+      }
+
+      .header p {
+        display: table-cell;
+        text-align: right;
+      }
+
+      .table-wrap {
+        display: table;
+        width: -moz-available;
+      }
+
+      .table-cell {
+        display: table-cell;
+      }
+
+      .table-cell-left {
+        text-align: left;
+      }
+
+      .table-cell-right {
+        text-align: right;
+      }
+
+      /* color */
+
+      .color-white {
+        color: #fff;
+      }
+
+      .color-grey-1 {
+        color: #555555;
+      }
+
+      /* margin */
+
+      .m-24 {
+        margin: 24px;
+      }
+
+      /* margin-bottom */
+
+      .m-b-8 {
+        margin-bottom: 8px;
+      }
+
+      .m-b-16 {
+        margin-bottom: 16px;
+      }
+
+      /* padding */
+
+      /* padding-vertical */
+      .p-v-32 {
+        padding: 32px 0;
+      }
+
+      .p-v-12 {
+        padding: 12px 0;
+      }
+
+      /* padding-horizontal */
+      .p-h-24 {
+        padding: 0 24px;
+      }
+
+      /* padding-bottom */
+      .p-b-16 {
+        padding-bottom: 16px;
+      }
+
+      .p-b-24 {
+        padding-bottom: 24px;
+      }
+
+      /* padding-top */
+      .p-t-12 {
+        padding-top: 12px;
+      }
+
+      .p-t-16 {
+        padding-top: 16px;
+      }
+
+      .p-24 {
+        padding: 24px;
+      }
+
+      .p-28 {
+        padding: 28px;
+      }
+
+      .p-20 {
+        padding: 20px;
+      }
+
+      /* width */
+
+      .width-155 {
+        width: 155px;
+      }
+
+      .width-80 {
+        width: 80%;
+      }
+
+      /* border */
+      .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      /* text */
+
+      .text-center {
+        text-align: center;
+      }
+
+      /* custom */
+
+      .content-card {
+        border-radius: 4px;
+        background: #740627;
+      }
+
+      .passenger-card {
+        padding: 8px 12px;
+        border-radius: 12px;
+        width: 330px;
+        background-color: #ece4f6;
+      }
+
+      /* font */
+
+      .f-xsmall {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: normal;
+      }
+      .f-small {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      .f-small-semi-bold {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .f-small-bold {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .f-medium {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+      }
+
+      .f-big {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+      }
+
+      .meta {
+        width: 559px;
+      }
+      .ellipse {
+        width: 11px;
+        height: 11px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .left-ellipse {
+        left: -5px;
+      }
+
+      .right-ellipse {
+        right: -5px;
+      }
+
+      .custom-table tbody tr:nth-child(3n) {
+        background-color: #ecf9c8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="width: 600px; padding: 0 50px;margin: 0;">
+      <!-- header -->
+      <div
+      style="
+        background: #09b367;
+        padding: 16px 28px;
+        display: table;
+        width: 600px;
+        box-sizing: border-box;
+      "
+    >
+      <div class="table-cell" style="vertical-align: middle">
+        <div class="header-content">
+          <p
+            class="f-small"
+            style="
+              text-align: left;
+              color: #fff;
+              font-size: 13px;
+              line-height: normal;
+              font-weight: 600;
+              margin-bottom: 4px;
+            "
+          >
+            ANUSHYAA’S VOUCHER
+            <span class="f-xsmall" style="text-decoration: underline"
+              >+91 98842 15273</span
+            >
+          </p>
+          <i
+            class="fas fa-map-marker-alt fa-thin color-white"
+            style="font-size: 12px"
+          ></i>
+          <span class="f-small color-white">Dubai</span>
+        </div>
+      </div>
+      <img
+        class="table-cell"
+        src="assets/logo1.png"
+        alt="logo"
+        style="
+          height: 31px;
+          width: 111px;
+          margin-left: auto;
+          vertical-align: middle;
+          text-align: right;
+        "
+      />
+    </div>
+      <!--Trail details-->
+      <div
+        style="
+          max-width: 559px;
+          margin-bottom: 2px;
+          position: relative;
+          min-height: 39px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px;
+          gap: 25px;
+          box-sizing: border-box;
+        "
+        class="content-card"
+      >
+        <span class="ellipse left-ellipse"></span>
+        <div style="vertical-align: middle" class="table-cell table-cell-left">
+          <p style="color: #fff; font-size: 8px">
+            Booking Reference Number: <b style="font-size: 9px">1287GT2</b>
+          </p>
+        </div>
+        <div style="vertical-align: middle" class="table-cell table-cell-left">
+          <p style="color: #fff; font-size: 8px">
+            Adult/Child PAX:
+            <b style="font-size: 9px">2 Adult, 2 Children</b>
+          </p>
+        </div>
+        <div style="vertical-align: middle" class="table-cell table-cell-left">
+          <p style="color: #fff; font-size: 8px">
+            Travel Dates:<b style="font-size: 9px"> April 1- April 5, 2024 </b>
+          </p>
+        </div>
+        <span class="ellipse right-ellipse"></span>
+      </div>
+      <!--Flight details table-->
+      <div
+        style="
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 8px;
+          margin-top: 20px;
+        "
+      >
+        <table style="width: 311px; height: 22px; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th
+                style="
+                  font-size: 7.5px;
+                  font-weight: 700;
+                  color: #fff;
+                  background-color: #375667;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                  box-sizing: border-box;
+                  height: 21px;
+                  width: 72px;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                FLIGHT DETAILS
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                FLIGHT NUMBER
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                ARRIVAL TIME
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                DEP TIME
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  border-right: 0.5px solid #8894b9;
+                  text-align: left;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  padding-right: 17px;
+                "
+              >
+                GATE
+              </th>
+            </tr>
+          </thead>
+          <tbody style="background-color: #fff7ec">
+            <tr>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                arrival
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                ASU47892
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                22:50 ETA hrs
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                14:42 ETA hrs
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                A
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                arrival
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                ASU47892
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                22:50 ETA hrs
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                14:42 ETA hrs
+              </td>
+              <td
+                style="
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                "
+              >
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table style="width: 240px; height: 22px; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th
+                style="
+                  font-size: 7.5px;
+                  box-sizing: border-box;
+                  height: 21px;
+                  width: 91px;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-weight: 700;
+                  color: #fff;
+                  background-color: #375667;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                "
+              >
+                HOTEL
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  text-align: left;
+                "
+              >
+                CHECK-IN
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-weight: 700;
+                  color: #21242c;
+                  border-top: 0.5px solid #8894b9;
+                  border-bottom: 0.5px solid #8894b9;
+                  border-right: 0.5px solid #8894b9;
+                  text-align: left;
+                "
+              >
+                CHECK-OUT
+              </th>
+            </tr>
+          </thead>
+          <tbody style="background-color: #fff7ec">
+            <tr>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                NAME
+              </td>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                DATE
+              </td>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                DATE
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                NAME
+              </td>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                DATE
+              </td>
+              <td
+                style="
+                  padding-left: 8px;
+                  padding-bottom: 6px;
+                  padding-top: 5px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #333848;
+                "
+              >
+                DATE
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Transfer details table-->
+      <div
+        style="
+          max-width: 559px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-top: 20px;
+        "
+      >
+        <table
+          class="custom-table"
+          style="width: 100%; height: 22px; border-collapse: collapse"
+        >
+          <thead>
+            <tr style="background-color: #375667; border: 1px solid #d6d9e6">
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                DATE
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                TOUR
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                transfer type
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                PICKUP LOCATION
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                timings
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                RETURN PICKUP LOCATION
+              </th>
+              <th
+                style="
+                  font-size: 7.5px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-weight: 700;
+                  color: #fff;
+                  text-align: left;
+                  text-transform: uppercase;
+                  vertical-align: text-top;
+                "
+              >
+                remarks
+              </th>
+            </tr>
+          </thead>
+          <tbody style="background-color: #ecedf9">
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 48px;
+                "
+              >
+                24-03-2024 <br />
+                Sunday
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                Airport Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Private
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 40px;
+                "
+              >
+                Airport <br />
+                Pickup
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 88px;
+                "
+              >
+                Pickup:
+                <span style="color: #038c55; font-weight: 800">11:30 AM</span
+                ><br />
+                Start Time:
+                <span style="color: #038c55; font-weight: 800">12:30 PM</span
+                ><br />
+                Return pickup:
+                <span style="color: #038c55; font-weight: 800">3:00 PM</span
+                ><br />
+                Activity Duration:
+                <span style="color: #038c55; font-weight: 800">2 hrs</span
+                ><br />
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 62px;
+                "
+              >
+                N/A
+              </td>
+              <td
+                style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  padding-left: 8px;
+                  font-size: 7.5px;
+                  line-height: normal;
+                  font-weight: 600;
+                  color: #333848;
+                  border: 0.5px solid #d6d9e6;
+                  min-width: 102px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--App Assistant-->
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          margin-top: 30px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 13px;
+            height: 13px;
+            background-color: #fff7ec;
+            border-radius: 50%;
+          "
+        >
+          <i
+            class="fa fa-thin fa-mobile"
+            style="color: #ecc8a2; font-size: 7.5px"
+          ></i>
+        </div>
+
+        &nbsp;&nbsp;
+        <p
+          style="
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 7.5px;
+          "
+        >
+          For assistance, please reach through the
+          <span
+            style="
+              color: #09b367;
+              text-decoration: underline #09b367;
+              font-weight: 800;
+            "
+            >Pickyourtrail App</span
+          >
+        </p>
+      </div>
+
+      <!--Emeregency contacts-->
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin: 0 auto;
+          margin-top: 20px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 13px;
+              height: 13px;
+              background-color: #fff7ec;
+              border-radius: 50%;
+            "
+          >
+            <i
+              class="fa fa-thin fa-phone"
+              style="color: #ecc8a2; font-size: 7.5px"
+            ></i>
+          </div>
+
+          &nbsp;&nbsp;
+          <p
+            style="
+              text-transform: uppercase;
+              font-weight: 600;
+              font-size: 7.5px;
+            "
+          >
+            Emergency Contacts
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              justify-content: center;
+              align-items: center;
+              border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+              padding-right: 20px;
+            "
+          >
+            <p
+              style="
+                font-size: 8px;
+                font-weight: 800;
+                line-height: normal;
+                text-align: center;
+                color: #09b367;
+              "
+            >
+              +62 813 7190 0035
+            </p>
+            <p
+              style="
+                font-size: 7.5px;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                color: #000;
+              "
+            >
+              Oshi
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              justify-content: center;
+              align-items: center;
+              border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+              padding-right: 20px;
+            "
+          >
+            <p
+              style="
+                font-size: 8px;
+                font-weight: 800;
+                line-height: normal;
+                text-align: center;
+                color: #09b367;
+              "
+            >
+              +62 813 0530 4016
+            </p>
+            <p
+              style="
+                font-size: 7.5px;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                color: #000;
+              "
+            >
+              Sukayasa
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              justify-content: center;
+              align-items: center;
+              border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+              padding-right: 20px;
+            "
+          >
+            <p
+              style="
+                font-size: 8px;
+                font-weight: 800;
+                line-height: normal;
+                text-align: center;
+                color: #09b367;
+              "
+            >
+              +62 818 398 2375
+            </p>
+            <p
+              style="
+                font-size: 7.5px;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                color: #000;
+              "
+            >
+              Suta
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <p
+              style="
+                font-size: 8px;
+                font-weight: 800;
+                line-height: normal;
+                text-align: center;
+                color: #09b367;
+              "
+            >
+              +91 8047180963
+            </p>
+            <p
+              style="
+                font-size: 7.5px;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                color: #000;
+              "
+            >
+              Pickyourtrail
+            </p>
+          </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="padding: 8px 15px; margin-top: 20px">
+      <img
+        class="table-cell"
+        src="assets/footer.png"
+        alt="logo"
+        style="height: 11px; width: 120px; text-align: left"
+      />
+    </footer>
+  </body>
+</html>
